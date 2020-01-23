@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.final35.ui.home.HomeFragment"
+        android:label="首頁"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.final35.ui.dashboard.DashboardFragment"
+        android:label="組隊大廳"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.final35.ui.notifications.NotificationsFragment"
+        android:label="組隊房間"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_person"
+        android:name="com.example.final35.ui.personinfo.PersonInfoFragment"
+        android:label="個人資訊"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>
